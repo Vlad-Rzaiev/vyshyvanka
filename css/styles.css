@@ -1,14 +1,8 @@
 /*==================== COMMON ====================*/
-:root {
-  --black: #1c2225;
-  --yellow: #ecd979;
-  --white: #fcf9f9;
-}
-
 body {
   font-family: "Manrope", sans-serif;
-  background-color: var(--black);
-  color: var(--white);
+  background-color: #1c2225;
+  color: #fcf9f9;
 }
 
 h1,
@@ -62,24 +56,193 @@ textarea {
   }
 }
 
-@media screen and (max-width: 767px) {
+/*==================== MOBILE ====================*/
+.container {
+  max-width: 375px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+.sections-paddings {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.sections-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.38;
+  letter-spacing: -0.03em;
+}
+/*==================== /MOBILE ====================*/
+
+/*==================== TABLET ====================*/
+@media screen and (min-width: 768px) {
   .container {
-    max-width: 375px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0 auto;
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
   .sections-paddings {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .sections-title {
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 1.38;
-    letter-spacing: -0.03em;
+    font-size: 44px;
+    line-height: 1.45;
   }
 }
+/*==================== /TABLET ====================*/
+
+/*==================== DESKTOP 1280 ====================*/
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .sections-paddings {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+}
+/*==================== /DESKTOP 1280 ====================*/
+
+/*==================== DESKTOP 1440 ====================*/
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+/*==================== /DESKTOP 1440 ====================*/
 /*==================== /COMMON ====================*/
+
+/*==================== HEADER ====================*/
+/*==================== MOBILE ====================*/
+.page-header {
+  margin-top: 20px;
+}
+
+.header-container {
+  height: 52px;
+  display: flex;
+  align-items: center;
+}
+
+.header-nav-list,
+.header-contact {
+  display: none;
+}
+
+.header-right-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.header-sm-list {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+}
+
+.header-sm-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(252, 249, 249, 0.1);
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  border-radius: 15px;
+  transition: background-color 250ms linear, border-color 250ms linear;
+}
+
+.header-sm-link:hover,
+.header-sm-link:focus {
+  background-color: transparent;
+  border-color: #ecd979;
+}
+
+.header-burger-btn {
+  line-height: 0;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin-left: 12px;
+}
+/*==================== /MOBILE ====================*/
+
+/*==================== TABLET ====================*/
+@media screen and (min-width: 768px) {
+  .header-burger-icon {
+    width: 44px;
+    height: 30px;
+  }
+}
+/*==================== /TABLET ====================*/
+
+/*==================== DESKTOP 1280 ====================*/
+@media screen and (min-width: 1280px) {
+  .header-nav {
+    display: flex;
+    align-items: center;
+  }
+  .header-logo {
+    margin-right: 60px;
+  }
+
+  .header-nav-list {
+    display: flex;
+    column-gap: 25px;
+  }
+
+  .header-nav-link {
+    font-size: 14px;
+    line-height: 1.29;
+    text-transform: uppercase;
+    padding: 17px 0;
+    transition: color 250ms linear;
+  }
+
+  .header-nav-link:hover,
+  .header-nav-link:focus {
+    color: #ecd979;
+  }
+
+  .header-contact {
+    display: block;
+    margin-right: 20px;
+  }
+
+  .header-contact-link {
+    font-size: 14px;
+    line-height: 1.43;
+    text-transform: uppercase;
+    min-width: 193px;
+    padding: 14px 28px;
+    border: 1px solid rgba(252, 249, 249, 0.1);
+    border-radius: 15px;
+    transition: border-color 250ms linear;
+  }
+
+  .header-contact-link:hover,
+  .header-contact-link:focus {
+    border-color: #ecd979;
+  }
+
+  .header-burger-btn {
+    display: none;
+  }
+}
+/*==================== /DESKTOP 1280 ====================*/
+
+/*========= 1440px DESKTOP IS THE SAME AS 1280px =========*/
+
+/*==================== /HEADER ====================*/
