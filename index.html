@@ -91,22 +91,107 @@
     </header>
 
     <main>
-      <section>
-        <div class="container"></div>
+      <!-- HERO -->
+      <section class="hero-section">
+        <div class="container hero-container">
+          <div class="hero-title-btn-wrapper">
+            <h1 class="hero-title">
+              Reviving the traditional
+              <span class="accent-color">Ukrainian</span> artistry in every
+              stitch.
+            </h1>
+            <div class="hero-star-conteiner">
+              <svg class="hero-star-icon" width="52" height="51">
+                <use href="./images/sprite.svg#icon-star"></use>
+              </svg>
+              <p class="hero-star-text">all embroidery is made by hand</p>
+            </div>
+            <button class="hero-btn" type="button">
+              Order
+              <svg class="hero-btn-icon" width="26" height="10">
+                <use href="./images/sprite.svg#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <picture class="hero-picture">
+            <source
+              srcset="
+                ./images/desktop-1280-img/hero-1280.jpg    1x,
+                ./images/desktop-1280-img/hero-1280@2x.jpg 2x
+              "
+              media="(min-width: 1280px)"
+            />
+
+            <source
+              srcset="
+                ./images/tablet-img/hero-tablet.jpg    1x,
+                ./images/tablet-img/hero-tablet@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+
+            <source
+              srcset="
+                ./images/mobile-img/hero-mobile.jpg    1x,
+                ./images/mobile-img/hero-mobile@2x.jpg 2x
+              "
+              media="(max-width: 767px)"
+            />
+
+            <img
+              class="hero-img"
+              src="./images/mobile-img/hero-mobile.jpg"
+              alt="girl in vyshyvanka"
+            />
+          </picture>
+        </div>
       </section>
-      <section>
-        <div class="container"></div>
+
+      <!-- ABOUT US -->
+      <section class="sections-paddings">
+        <div class="container">
+          <h2 class="sections-title">About Us</h2>
+        </div>
       </section>
-      <section>
-        <div class="container"></div>
+
+      <!-- OUR COLLECTION -->
+      <section class="sections-paddings">
+        <div class="container">
+          <h2 class="sections-title">Our collection</h2>
+        </div>
       </section>
-      <section>
-        <div class="container"></div>
+
+      <!-- IMAGE SECTION -->
+      <section class="sections-paddings">
+        <div class="container">
+          <h2 class="sections-title">IMG</h2>
+        </div>
+      </section>
+
+      <!-- ORDER SECTION -->
+      <section class="sections-paddings">
+        <div class="container">
+          <h2 class="sections-title">
+            Your order is our priority: Personalized approach and quality of
+            service
+          </h2>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section class="sections-paddings">
+        <div class="container">
+          <h2 class="sections-title">Testimonials</h2>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <div class="container"></div>
+    <footer class="footer-page">
+      <div class="container">
+        <h2 class="footer-title">
+          A touch of Ukrainian culture in every embroidery
+        </h2>
+      </div>
     </footer>
   </body>
 </html>

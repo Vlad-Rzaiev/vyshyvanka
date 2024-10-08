@@ -30,6 +30,7 @@ img {
 
 button {
   cursor: pointer;
+  color: inherit;
 }
 
 a {
@@ -244,5 +245,169 @@ textarea {
 /*==================== /DESKTOP 1280 ====================*/
 
 /*========= 1440px DESKTOP IS THE SAME AS 1280px =========*/
-
 /*==================== /HEADER ====================*/
+
+/*==================== HERO ====================*/
+/*==================== MOBILE ====================*/
+.hero-section {
+  padding-top: 84px;
+  padding-bottom: 40px;
+}
+
+.hero-title {
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin-bottom: 20px;
+}
+
+.accent-color {
+  color: #ecd979;
+}
+
+.hero-star-conteiner {
+  display: none;
+}
+
+.hero-btn {
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  border-radius: 15px;
+  padding: 14px 36px;
+  display: block;
+  margin: 0 auto 40px;
+  transition: border-color 250ms linear;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  border-color: #ecd979;
+}
+
+.hero-btn-icon {
+  transform: rotate(-30deg);
+  margin-left: 10px;
+}
+/*==================== /MOBILE ====================*/
+
+/*==================== TABLET ====================*/
+@media screen and (min-width: 768px) {
+  .hero-section {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  .hero-container {
+    position: relative;
+  }
+
+  .hero-title {
+    font-size: 54px;
+    line-height: 1.2;
+    max-width: 549px;
+    margin-bottom: 40px;
+  }
+
+  .hero-star-conteiner {
+    display: block;
+    max-width: 115px;
+    position: absolute;
+    top: 16px;
+    right: 32px;
+  }
+
+  .hero-star-icon {
+    display: block;
+    margin: 0 auto 16px;
+  }
+
+  .hero-star-text {
+    letter-spacing: -0.04em;
+    text-align: center;
+    color: rgba(252, 249, 249, 0.4);
+  }
+
+  .hero-btn {
+    font-size: 16px;
+    padding: 14px 39px;
+    margin: 0 0 46px 141px;
+  }
+}
+/*==================== /TABLET ====================*/
+
+/*================== DESKTOP 1280 ==================*/
+@media screen and (min-width: 1280px) {
+  .hero-section {
+    padding-bottom: 75px;
+  }
+
+  .hero-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .hero-title-btn-wrapper {
+    order: 2;
+  }
+
+  .hero-title {
+    padding-top: 94px;
+    max-width: 518px;
+  }
+
+  .hero-star-conteiner {
+    top: 14px;
+    right: 50px;
+  }
+
+  .hero-picture {
+    order: 1;
+  }
+
+  .hero-img {
+    margin-right: 40px;
+  }
+}
+/*================== /DESKTOP 1280 ==================*/
+
+/*================== DESKTOP 1440 ==================*/
+@media screen and (min-width: 1440px) {
+  .hero-section {
+  }
+  .container {
+  }
+  .hero-container {
+  }
+  .hero-title-btn-wrapper {
+  }
+  .hero-title {
+    font-size: 64px;
+    padding-top: 66px;
+    max-width: 630px;
+  }
+  .accent-color {
+  }
+  .hero-star-conteiner {
+    top: 66px;
+    right: 100px;
+  }
+  .hero-star-icon {
+  }
+  .hero-star-text {
+  }
+  .hero-btn {
+  }
+  .hero-btn-icon {
+  }
+  .hero-picture {
+  }
+  .hero-img {
+  }
+}
+/*================== /DESKTOP 1440 ==================*/
+/*==================== /HERO ====================*/
