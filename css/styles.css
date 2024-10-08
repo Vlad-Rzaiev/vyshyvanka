@@ -58,6 +58,11 @@ textarea {
 }
 
 /*==================== MOBILE ====================*/
+.sections-paddings {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 .container {
   max-width: 375px;
   padding-left: 20px;
@@ -65,30 +70,26 @@ textarea {
   margin: 0 auto;
 }
 
-.sections-paddings {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
 .sections-title {
   font-weight: 500;
   font-size: 32px;
   line-height: 1.38;
   letter-spacing: -0.03em;
+  margin-bottom: 40px;
 }
 /*==================== /MOBILE ====================*/
 
 /*==================== TABLET ====================*/
 @media screen and (min-width: 768px) {
+  .sections-paddings {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
   .container {
     max-width: 768px;
     padding-left: 32px;
     padding-right: 32px;
-  }
-
-  .sections-paddings {
-    padding-top: 50px;
-    padding-bottom: 50px;
   }
 
   .sections-title {
@@ -100,15 +101,15 @@ textarea {
 
 /*==================== DESKTOP 1280 ====================*/
 @media screen and (min-width: 1280px) {
+  .sections-paddings {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
   .container {
     max-width: 1280px;
     padding-left: 50px;
     padding-right: 50px;
-  }
-
-  .sections-paddings {
-    padding-top: 75px;
-    padding-bottom: 75px;
   }
 }
 /*==================== /DESKTOP 1280 ====================*/
@@ -390,3 +391,182 @@ textarea {
 }
 /*================== /DESKTOP 1440 ==================*/
 /*==================== /HERO ====================*/
+
+/*==================== ABOUT US ====================*/
+/*==================== MOBILE ====================*/
+.about-section {
+  max-width: 375px;
+  margin: 0 auto;
+  background-image: url(../images/mobile-bg/mobile-au-bg.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.about-title-text-wrapper {
+  margin-bottom: 50px;
+}
+
+.about-text {
+  font-size: 14px;
+  letter-spacing: -0.04em;
+  color: rgba(252, 249, 249, 0.4);
+}
+
+.about-first-text {
+  margin-bottom: 20px;
+}
+/*==================== /MOBILE ====================*/
+
+/*==================== TABLET ====================*/
+@media screen and (min-width: 768px) {
+  .about-section {
+    max-width: 768px;
+    background-image: url(../images/tablet-bg/tablet-au-bg.svg);
+  }
+
+  .about-title-text-wrapper {
+    margin-bottom: 40px;
+  }
+
+  .about-text {
+    font-size: 16px;
+  }
+}
+/*==================== /TABLET ====================*/
+
+/*================== DESKTOP 1280 ==================*/
+@media screen and (min-width: 1280px) {
+  .about-section {
+    max-width: 1280px;
+    background-image: url(../images/desktop-1280-bg/desktop1280-au-bg.svg);
+  }
+
+  .about-container {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+  }
+
+  .about-title-text-wrapper {
+    max-width: 536px;
+  }
+
+  .about-first-text {
+    max-width: 508px;
+  }
+}
+/*================== /DESKTOP 1280 ==================*/
+
+/*================== DESKTOP 1440 ==================*/
+@media screen and (min-width: 1440px) {
+  .about-section {
+    max-width: 1440px;
+    background-image: url(../images/desktop-1440-bg/desktop1440-au-bg.svg);
+  }
+
+  .about-title-text-wrapper {
+    max-width: 481px;
+  }
+}
+/*================== /DESKTOP 1440 ==================*/
+/*==================== /ABOUT US ====================*/
+
+/*================= OUR COLLECTION =================*/
+/*==================== MOBILE ====================*/
+/*==================== /MOBILE ====================*/
+
+/*==================== TABLET ====================*/
+@media screen and (min-width: 768px) {
+}
+/*==================== /TABLET ====================*/
+
+/*================== DESKTOP 1280 ==================*/
+@media screen and (min-width: 1280px) {
+}
+/*================== /DESKTOP 1280 ==================*/
+
+/*================== DESKTOP 1440 ==================*/
+@media screen and (min-width: 1440px) {
+}
+/*================== /DESKTOP 1440 ==================*/
+/*================= /OUR COLLECTION =================*/
+
+/*================ IMAGE SECTION ===================*/
+/*==================== MOBILE ====================*/
+/*==================== /MOBILE ====================*/
+
+/*==================== TABLET ====================*/
+@media screen and (min-width: 768px) {
+}
+/*==================== /TABLET ====================*/
+
+/*================== DESKTOP 1280 ==================*/
+@media screen and (min-width: 1280px) {
+}
+/*================== /DESKTOP 1280 ==================*/
+
+/*================== DESKTOP 1440 ==================*/
+@media screen and (min-width: 1440px) {
+}
+/*================== /DESKTOP 1440 ==================*/
+/*================ /IMAGE SECTION ====================*/
+
+/*================= ORDER SECTION ====================*/
+/*==================== MOBILE ====================*/
+/*==================== /MOBILE ====================*/
+
+/*==================== TABLET ====================*/
+@media screen and (min-width: 768px) {
+}
+/*==================== /TABLET ====================*/
+
+/*================== DESKTOP 1280 ==================*/
+@media screen and (min-width: 1280px) {
+}
+/*================== /DESKTOP 1280 ==================*/
+
+/*================== DESKTOP 1440 ==================*/
+@media screen and (min-width: 1440px) {
+}
+/*================== /DESKTOP 1440 ==================*/
+/*================= /ORDER SECTION ====================*/
+
+/*================= TESTIMONIALS ====================*/
+/*==================== MOBILE ====================*/
+/*==================== /MOBILE ====================*/
+
+/*==================== TABLET ====================*/
+@media screen and (min-width: 768px) {
+}
+/*==================== /TABLET ====================*/
+
+/*================== DESKTOP 1280 ==================*/
+@media screen and (min-width: 1280px) {
+}
+/*================== /DESKTOP 1280 ==================*/
+
+/*================== DESKTOP 1440 ==================*/
+@media screen and (min-width: 1440px) {
+}
+/*================== /DESKTOP 1440 ==================*/
+/*================= /TESTIMONIALS ====================*/
+
+/*==================== FOOTER ====================*/
+/*==================== MOBILE ====================*/
+/*==================== /MOBILE ====================*/
+
+/*==================== TABLET ====================*/
+@media screen and (min-width: 768px) {
+}
+/*==================== /TABLET ====================*/
+
+/*================== DESKTOP 1280 ==================*/
+@media screen and (min-width: 1280px) {
+}
+/*================== /DESKTOP 1280 ==================*/
+
+/*================== DESKTOP 1440 ==================*/
+@media screen and (min-width: 1440px) {
+}
+/*================== /DESKTOP 1440 ==================*/
+/*==================== /FOOTER ====================*/
