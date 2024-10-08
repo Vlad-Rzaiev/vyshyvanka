@@ -377,36 +377,15 @@ textarea {
 
 /*================== DESKTOP 1440 ==================*/
 @media screen and (min-width: 1440px) {
-  .hero-section {
-  }
-  .container {
-  }
-  .hero-container {
-  }
-  .hero-title-btn-wrapper {
-  }
   .hero-title {
     font-size: 64px;
     padding-top: 66px;
     max-width: 630px;
   }
-  .accent-color {
-  }
+
   .hero-star-conteiner {
     top: 66px;
     right: 100px;
-  }
-  .hero-star-icon {
-  }
-  .hero-star-text {
-  }
-  .hero-btn {
-  }
-  .hero-btn-icon {
-  }
-  .hero-picture {
-  }
-  .hero-img {
   }
 }
 /*================== /DESKTOP 1440 ==================*/
