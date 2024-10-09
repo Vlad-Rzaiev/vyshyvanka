@@ -473,40 +473,136 @@ textarea {
 
 /*================= OUR COLLECTION =================*/
 /*==================== MOBILE ====================*/
+.collection-section {
+  max-width: 375px;
+  margin: 0 auto;
+  background-image: url(../images/mobile-bg/mobile-colect-bg.svg);
+  background-repeat: no-repeat;
+  background-position: 0px 335px;
+}
+
+.collection-title {
+  text-align: center;
+}
+
+.collection-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.collection-link {
+  display: block;
+  margin-bottom: 18px;
+}
+
+.collection-item-img {
+  border-radius: 4px;
+}
+
+.collection-item-title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.collection-item-text {
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  color: rgba(252, 249, 249, 0.4);
+}
 /*==================== /MOBILE ====================*/
 
 /*==================== TABLET ====================*/
 @media screen and (min-width: 768px) {
+  .collection-section {
+    max-width: 768px;
+    background-image: url(../images/tablet-bg/tablet-colect-bg.svg);
+    background-position: 0px 275px;
+  }
+
+  .collection-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 20px;
+  }
+
+  .collection-item {
+    width: calc((100% - 20px) / 2);
+  }
+
+  .collection-item-title {
+    font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 /*==================== /TABLET ====================*/
 
 /*================== DESKTOP 1280 ==================*/
 @media screen and (min-width: 1280px) {
+  .collection-section {
+    max-width: 1280px;
+    background-image: url(../images/desktop-1280-bg/desktop1280-colect-bg.svg);
+    background-position: 0px 290px;
+  }
+
+  .collection-list {
+    row-gap: 40px;
+  }
+
+  .collection-item {
+    width: calc((100% - 40px) / 3);
+  }
 }
 /*================== /DESKTOP 1280 ==================*/
 
 /*================== DESKTOP 1440 ==================*/
 @media screen and (min-width: 1440px) {
+  .collection-section {
+    max-width: 1440px;
+    background-image: url(../images/desktop-1440-bg/desktop1440-colect-bg.svg);
+    background-position: 0px 305px;
+  }
 }
 /*================== /DESKTOP 1440 ==================*/
 /*================= /OUR COLLECTION =================*/
 
 /*================ IMAGE SECTION ===================*/
 /*==================== MOBILE ====================*/
+.page-img-container {
+  max-width: 375px;
+  margin: 0 auto;
+}
 /*==================== /MOBILE ====================*/
 
 /*==================== TABLET ====================*/
 @media screen and (min-width: 768px) {
+  .page-img-container {
+    max-width: 768px;
+  }
 }
 /*==================== /TABLET ====================*/
 
 /*================== DESKTOP 1280 ==================*/
 @media screen and (min-width: 1280px) {
+  .page-img-container {
+    max-width: 1280px;
+  }
 }
 /*================== /DESKTOP 1280 ==================*/
 
 /*================== DESKTOP 1440 ==================*/
 @media screen and (min-width: 1440px) {
+  .page-img-container {
+    max-width: 1440px;
+  }
 }
 /*================== /DESKTOP 1440 ==================*/
 /*================ /IMAGE SECTION ====================*/
