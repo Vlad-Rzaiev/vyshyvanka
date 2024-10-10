@@ -148,7 +148,7 @@
       </section>
 
       <!-- ABOUT US -->
-      <section class="sections-paddings about-section">
+      <section class="sections-paddings about-section" id="about">
         <div class="container about-container">
           <div class="about-title-text-wrapper">
             <h2 class="sections-title">About Us</h2>
@@ -214,7 +214,7 @@
       </section>
 
       <!-- OUR COLLECTION -->
-      <section class="sections-paddings collection-section">
+      <section class="sections-paddings collection-section" id="collection">
         <div class="container">
           <h2 class="sections-title collection-title">Our collection</h2>
           <ul class="collection-list">
@@ -512,19 +512,129 @@
       </section>
 
       <!-- ORDER SECTION -->
-      <section class="sections-paddings">
-        <div class="container">
-          <h2 class="sections-title">
-            Your order is our priority: Personalized approach and quality of
-            service
-          </h2>
+      <section class="sections-paddings order-section" id="order">
+        <div class="container order-container">
+          <div class="order-form-wrapper">
+            <h2 class="sections-title order-title">
+              <span class="accent-color">Your order</span> is our priority:
+              Personalized approach and quality of service
+            </h2>
+            <form class="order-form">
+              <input
+                class="order-form-input"
+                type="text"
+                name="user-name"
+                required
+                placeholder="Enter your full name"
+              />
+              <input
+                class="order-form-input"
+                type="email"
+                name="user-email"
+                required
+                placeholder="Enter your email"
+              />
+              <textarea
+                class="order-form-textarea"
+                name="user-commnt"
+                required
+                placeholder="Comments"
+              ></textarea>
+              <button class="order-form-submit-btn" type="submit">
+                Send
+                <svg class="order-form-submit-icon" width="26" height="10">
+                  <use href="./images/sprite.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+          <picture class="order-picture">
+            <source
+              srcset="
+                ./images/desktop-1440-img/order-1440.jpg    1x,
+                ./images/desktop-1440-img/order-1440@2x.jpg 2x
+              "
+              media="(min-width: 1440px)"
+            />
+            <source
+              srcset="
+                ./images/desktop-1280-img/order-1280.jpg    1x,
+                ./images/desktop-1280-img/order-1280@2x.jpg 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./images/tablet-img/order-tablet.jpg    1x,
+                ./images/tablet-img/order-tablet@2x.jpg 2x
+              "
+              media="(max-width: 1279px)"
+            />
+            <img
+              src="./images/tablet-img/order-tablet.jpg"
+              alt="vysyvanka image"
+            />
+          </picture>
         </div>
       </section>
 
       <!-- TESTIMONIALS -->
-      <section class="sections-paddings">
+      <section class="sections-paddings" id="testimonials">
         <div class="container">
-          <h2 class="sections-title">Testimonials</h2>
+          <h2 class="sections-title testimonials-title">Testimonials</h2>
+          <ul class="testimonials-list">
+            <li class="testimonials-item">
+              <img
+                class="testimonials-img"
+                src="./images/testimonials-avatars/maria-tkachuk.png"
+                alt="maria tkachuk avatar"
+                width="64"
+                height="64"
+              />
+              <h3 class="testimonials-list-title">Maria Tkachuk</h3>
+              <p class="testimonials-list-text">
+                I was pleasantly surprised by the variety of embroidery offered
+                by Vyshyvanka Vibes. They have models for every taste - from
+                classic to modern. I bought an embroidered dress to celebrate a
+                special occasion and received impeccable service and refinement
+                in every detail.
+              </p>
+            </li>
+            <li class="testimonials-item second">
+              <img
+                class="testimonials-img"
+                src="./images/testimonials-avatars/sergey-rybachok.png"
+                alt="sergey rybachok avatar"
+                width="64"
+                height="64"
+              />
+              <h3 class="testimonials-list-title">Sergey Rybachok</h3>
+              <p class="testimonials-list-text">
+                Vyshyvanka Vibes exceeds all my expectations! Their vyshyvanka
+                are simply masterpieces! I fell in love with the quality of the
+                materials and the skill of the artisans behind each product.
+                This is my favorite embroidery shop where I always find
+                something special and unique.
+              </p>
+            </li>
+            <li class="testimonials-item third">
+              <img
+                class="testimonials-img"
+                src="./images/testimonials-avatars/natalia-chatuk.png"
+                alt="natalia chatuk avatar"
+                width="64"
+                height="64"
+              />
+              <h3 class="testimonials-list-title">Natalia Chatuk</h3>
+              <p class="testimonials-list-text">
+                Vyshyvanka Vibes is a real find for everyone who appreciates
+                Ukrainian culture. Their embroidery reflects the spirit and
+                traditions of our people. I not only buy embroidered shirts for
+                myself, but also give them to my friends abroad as a symbol of
+                our beauty and national pride.
+              </p>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
@@ -532,8 +642,23 @@
     <!-- FOOTER -->
     <footer class="footer-page">
       <div class="container">
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#about">about us</a>
+          </li>
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="##order">customer order</a>
+          </li>
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="##collection">our collection</a>
+          </li>
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#testimonials">testimonials</a>
+          </li>
+        </ul>
         <h2 class="footer-title">
-          A touch of Ukrainian culture in every embroidery
+          A touch of <span class="accent-color">Ukrainian</span> culture in
+          every embroidery
         </h2>
       </div>
     </footer>

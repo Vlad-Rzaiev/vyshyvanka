@@ -1,6 +1,6 @@
 /*==================== COMMON ====================*/
 body {
-  font-family: "Manrope", sans-serif;
+  font-family: 'Manrope', sans-serif;
   background-color: #1c2225;
   color: #fcf9f9;
 }
@@ -609,60 +609,303 @@ textarea {
 
 /*================= ORDER SECTION ====================*/
 /*==================== MOBILE ====================*/
+.order-form-input {
+  letter-spacing: -0.02em;
+  color: #fcf9f9;
+  display: block;
+  width: 100%;
+  height: 47px;
+  background-color: transparent;
+  padding-left: 16px;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  border-radius: 15px;
+  margin-bottom: 20px;
+  transition: border-color 250ms linear;
+}
+
+.order-form-input::placeholder,
+.order-form-textarea::placeholder {
+  font-size: 14px;
+  color: rgba(252, 249, 249, 0.5);
+}
+
+.order-form-input:focus,
+.order-form-textarea:focus {
+  border-color: rgba(252, 249, 249, 0.6);
+}
+
+.order-form-textarea {
+  letter-spacing: -0.02em;
+  color: #fcf9f9;
+  display: block;
+  width: 100%;
+  height: 196px;
+  resize: none;
+  background-color: transparent;
+  padding: 14px 16px;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  border-radius: 8px;
+  margin-bottom: 40px;
+  transition: border-color 250ms linear;
+}
+
+.order-form-submit-btn {
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  border-radius: 15px;
+  padding: 14px 36px;
+  display: block;
+  margin: 0 auto;
+  transition: border-color 250ms linear;
+}
+
+.order-form-submit-btn:hover,
+.order-form-submit-btn:focus {
+  border-color: #ecd979;
+}
+
+.order-form-submit-icon {
+  margin-left: 10px;
+  transform: rotate(-30deg);
+}
+
+.order-picture {
+  display: none;
+}
 /*==================== /MOBILE ====================*/
 
 /*==================== TABLET ====================*/
 @media screen and (min-width: 768px) {
+  .order-section {
+    max-width: 768px;
+    margin: 0 auto;
+    background-image: url(../images/tablet-bg/tablet-order-bg.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+  }
+
+  .order-title {
+    max-width: 542px;
+  }
+
+  .order-form {
+    max-width: 508px;
+  }
+
+  .order-form-submit-btn {
+    padding: 14px 39px;
+    margin: 0 0 100px;
+  }
+
+  .order-picture {
+    display: block;
+  }
 }
 /*==================== /TABLET ====================*/
 
 /*================== DESKTOP 1280 ==================*/
 @media screen and (min-width: 1280px) {
+  .order-section {
+    max-width: 1280px;
+    background-image: url(../images/desktop-1280-bg/desktop1280-order-bg.svg);
+    background-position: 0px 238px;
+  }
+
+  .order-container {
+    display: flex;
+    column-gap: 50px;
+  }
+
+  .order-form-wrapper {
+    order: 2;
+  }
+
+  .order-form-submit-btn {
+    margin: 0;
+  }
+
+  .order-picture {
+    order: 1;
+  }
 }
 /*================== /DESKTOP 1280 ==================*/
 
 /*================== DESKTOP 1440 ==================*/
 @media screen and (min-width: 1440px) {
+  .order-section {
+    max-width: 1440px;
+    background-image: url(../images/desktop-1440-bg/desktop1440-order-bg.svg);
+  }
+
+  .order-title {
+    max-width: 666px;
+  }
 }
 /*================== /DESKTOP 1440 ==================*/
 /*================= /ORDER SECTION ====================*/
 
 /*================= TESTIMONIALS ====================*/
 /*==================== MOBILE ====================*/
+.testimonials-title {
+  margin-bottom: 64px;
+}
+
+.testimonials-item {
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  border-radius: 4px;
+  padding: 54px 18px 18px 18px;
+  position: relative;
+}
+
+.testimonials-img {
+  position: absolute;
+  top: -13.33%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.testimonials-list-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.testimonials-list-text {
+  font-size: 14px;
+  text-align: center;
+  color: rgba(252, 249, 249, 0.4);
+}
+
+.testimonials-item.second,
+.testimonials-item.third {
+  display: none;
+}
 /*==================== /MOBILE ====================*/
 
 /*==================== TABLET ====================*/
 @media screen and (min-width: 768px) {
+  .testimonials-list {
+    display: flex;
+    column-gap: 32px;
+  }
+
+  .testimonials-item.second {
+    display: block;
+  }
+
+  .testimonials-item {
+    width: calc((100% - 32px) / 2);
+  }
 }
 /*==================== /TABLET ====================*/
 
 /*================== DESKTOP 1280 ==================*/
 @media screen and (min-width: 1280px) {
+  .testimonials-list {
+    column-gap: 26px;
+  }
+
+  .testimonials-item.third {
+    display: block;
+  }
+
+  .testimonials-item {
+    width: calc((100% - 52px) / 3);
+  }
 }
 /*================== /DESKTOP 1280 ==================*/
-
-/*================== DESKTOP 1440 ==================*/
-@media screen and (min-width: 1440px) {
-}
-/*================== /DESKTOP 1440 ==================*/
 /*================= /TESTIMONIALS ====================*/
 
 /*==================== FOOTER ====================*/
 /*==================== MOBILE ====================*/
+.footer-page {
+  border-top: 1px solid rgba(252, 249, 249, 0.1);
+  padding-top: 40px;
+  padding-bottom: 280px;
+  margin-top: 40px;
+
+  background-image: url(../images/mobile-bg/mobile-footer-bg.svg);
+  background-repeat: no-repeat;
+  background-position: center 440px;
+}
+
+.footer-nav-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 40px;
+  row-gap: 25px;
+  max-width: 280px;
+  margin-bottom: 40px;
+}
+
+.footer-nav-link {
+  font-size: 14px;
+  line-height: 1.29;
+  text-transform: uppercase;
+  transition: color 250ms linear;
+}
+
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+  color: #ecd979;
+}
+
+.footer-title {
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 1.23;
+  letter-spacing: -0.03em;
+}
 /*==================== /MOBILE ====================*/
 
 /*==================== TABLET ====================*/
 @media screen and (min-width: 768px) {
+  .footer-page {
+    padding-bottom: 40px;
+    background-image: url(../images/tablet-bg/tablet-footer-bg.svg);
+    background-position: right center;
+  }
+
+  .footer-nav-list {
+    max-width: 476px;
+    column-gap: 25px;
+    margin-bottom: 80px;
+  }
+
+  .footer-title {
+    font-size: 54px;
+    line-height: 1.19;
+    max-width: 521px;
+  }
 }
 /*==================== /TABLET ====================*/
 
 /*================== DESKTOP 1280 ==================*/
 @media screen and (min-width: 1280px) {
+  .footer-page {
+    background-image: url(../images/desktop-1280-bg/desktop1280-footer-bg.svg);
+  }
+
+  .footer-title {
+    font-size: 64px;
+    line-height: 1.16;
+    max-width: 754px;
+  }
 }
 /*================== /DESKTOP 1280 ==================*/
 
 /*================== DESKTOP 1440 ==================*/
 @media screen and (min-width: 1440px) {
+  .footer-page {
+    background-image: url(../images/desktop-1440-bg/desktop1440-footer-bg.svg);
+  }
 }
 /*================== /DESKTOP 1440 ==================*/
 /*==================== /FOOTER ====================*/
