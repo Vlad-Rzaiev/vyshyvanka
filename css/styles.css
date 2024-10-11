@@ -244,7 +244,6 @@ textarea {
   }
 }
 /*==================== /DESKTOP 1280 ====================*/
-
 /*========= 1440px DESKTOP IS THE SAME AS 1280px =========*/
 /*==================== /HEADER ====================*/
 
@@ -395,6 +394,8 @@ textarea {
 /*==================== ABOUT US ====================*/
 /*==================== MOBILE ====================*/
 .about-section {
+  max-width: 375px;
+  margin: 0 auto;
   background-image: url(../images/mobile-bg/mobile-au-bg.svg);
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -418,6 +419,7 @@ textarea {
 /*==================== TABLET ====================*/
 @media screen and (min-width: 768px) {
   .about-section {
+    max-width: 768px;
     background-image: url(../images/tablet-bg/tablet-au-bg.svg);
   }
 
@@ -434,6 +436,7 @@ textarea {
 /*================== DESKTOP 1280 ==================*/
 @media screen and (min-width: 1280px) {
   .about-section {
+    max-width: 1280px;
     background-image: url(../images/desktop-1280-bg/desktop1280-au-bg.svg);
   }
 
@@ -456,6 +459,7 @@ textarea {
 /*================== DESKTOP 1440 ==================*/
 @media screen and (min-width: 1440px) {
   .about-section {
+    max-width: 1440px;
     background-image: url(../images/desktop-1440-bg/desktop1440-au-bg.svg);
   }
 
@@ -469,6 +473,8 @@ textarea {
 /*================= OUR COLLECTION =================*/
 /*==================== MOBILE ====================*/
 .collection-section {
+  max-width: 375px;
+  margin: 0 auto;
   background-image: url(../images/mobile-bg/mobile-colect-bg.svg);
   background-repeat: no-repeat;
   background-position: 0px 335px;
@@ -514,6 +520,7 @@ textarea {
 /*==================== TABLET ====================*/
 @media screen and (min-width: 768px) {
   .collection-section {
+    max-width: 768px;
     background-image: url(../images/tablet-bg/tablet-colect-bg.svg);
     background-position: 0px 275px;
   }
@@ -540,6 +547,7 @@ textarea {
 /*================== DESKTOP 1280 ==================*/
 @media screen and (min-width: 1280px) {
   .collection-section {
+    max-width: 1280px;
     background-image: url(../images/desktop-1280-bg/desktop1280-colect-bg.svg);
     background-position: 0px 290px;
   }
@@ -557,6 +565,7 @@ textarea {
 /*================== DESKTOP 1440 ==================*/
 @media screen and (min-width: 1440px) {
   .collection-section {
+    max-width: 1440px;
     background-image: url(../images/desktop-1440-bg/desktop1440-colect-bg.svg);
     background-position: 0px 305px;
   }
@@ -671,6 +680,8 @@ textarea {
 /*==================== TABLET ====================*/
 @media screen and (min-width: 768px) {
   .order-section {
+    max-width: 768px;
+    margin: 0 auto;
     background-image: url(../images/tablet-bg/tablet-order-bg.svg);
     background-repeat: no-repeat;
     background-position: left bottom;
@@ -698,6 +709,7 @@ textarea {
 /*================== DESKTOP 1280 ==================*/
 @media screen and (min-width: 1280px) {
   .order-section {
+    max-width: 1280px;
     background-image: url(../images/desktop-1280-bg/desktop1280-order-bg.svg);
     background-position: 0px 238px;
   }
@@ -724,6 +736,7 @@ textarea {
 /*================== DESKTOP 1440 ==================*/
 @media screen and (min-width: 1440px) {
   .order-section {
+    max-width: 1440px;
     background-image: url(../images/desktop-1440-bg/desktop1440-order-bg.svg);
   }
 
@@ -812,10 +825,14 @@ textarea {
 /*==================== MOBILE ====================*/
 .footer-page {
   border-top: 1px solid rgba(252, 249, 249, 0.1);
+  margin-top: 40px;
+}
+
+.footer-section {
+  max-width: 375px;
   padding-top: 40px;
   padding-bottom: 280px;
-  margin-top: 40px;
-
+  margin: 0 auto;
   background-image: url(../images/mobile-bg/mobile-footer-bg.svg);
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -853,7 +870,8 @@ textarea {
 
 /*==================== TABLET ====================*/
 @media screen and (min-width: 768px) {
-  .footer-page {
+  .footer-section {
+    max-width: 768px;
     padding-bottom: 40px;
     background-image: url(../images/tablet-bg/tablet-footer-bg.svg);
     background-position: right center;
@@ -875,7 +893,8 @@ textarea {
 
 /*================== DESKTOP 1280 ==================*/
 @media screen and (min-width: 1280px) {
-  .footer-page {
+  .footer-section {
+    max-width: 1280px;
     background-image: url(../images/desktop-1280-bg/desktop1280-footer-bg.svg);
   }
 
@@ -889,7 +908,8 @@ textarea {
 
 /*================== DESKTOP 1440 ==================*/
 @media screen and (min-width: 1440px) {
-  .footer-page {
+  .footer-section {
+    max-width: 1440px;
     background-image: url(../images/desktop-1440-bg/desktop1440-footer-bg.svg);
   }
 }
