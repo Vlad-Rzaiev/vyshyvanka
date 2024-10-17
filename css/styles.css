@@ -756,15 +756,12 @@ textarea {
 .testimonials-item {
   border: 1px solid rgba(252, 249, 249, 0.1);
   border-radius: 4px;
-  padding: 54px 18px 18px 18px;
+  padding: 14px;
   position: relative;
 }
 
 .testimonials-img {
-  position: absolute;
-  top: -13.33%;
-  left: 50%;
-  transform: translateX(-50%);
+  margin: 0 auto 12px;
 }
 
 .testimonials-list-title {
@@ -791,7 +788,6 @@ textarea {
 @media screen and (min-width: 768px) {
   .testimonials-list {
     display: flex;
-    column-gap: 32px;
   }
 
   .testimonials-item.second {
@@ -806,10 +802,6 @@ textarea {
 
 /*================== DESKTOP 1280 ==================*/
 @media screen and (min-width: 1280px) {
-  .testimonials-list {
-    column-gap: 26px;
-  }
-
   .testimonials-item.third {
     display: block;
   }

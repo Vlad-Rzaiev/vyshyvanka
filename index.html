@@ -20,6 +20,8 @@
     />
     <link rel="manifest" href="./favicon/site.webmanifest" />
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -33,6 +35,11 @@
       integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
 
     <link rel="stylesheet" href="./css/styles.css" />
@@ -75,28 +82,33 @@
           </address>
           <ul class="header-sm-list">
             <li class="header-sm-item">
-              <a class="header-sm-link" href="">
+              <a class="header-sm-link" href="https://www.facebook.com/">
                 <svg class="header-sm-icon" width="28" height="28">
                   <use href="./images/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="header-sm-item">
-              <a class="header-sm-link" href="">
+              <a class="header-sm-link" href="https://www.instagram.com/">
                 <svg class="header-sm-icon" width="28" height="28">
                   <use href="./images/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="header-sm-item">
-              <a class="header-sm-link" href="">
+              <a class="header-sm-link" href="https://www.youtube.com/">
                 <svg class="header-sm-icon" width="28" height="28">
                   <use href="./images/sprite.svg#icon-youtube"></use>
                 </svg>
               </a>
             </li>
           </ul>
-          <button class="header-burger-btn" type="button" data-menu-open>
+          <button
+            class="header-burger-btn js-open-menu"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
             <svg class="header-burger-icon" width="36" height="24">
               <use href="./images/sprite.svg#icon-burger"></use>
             </svg>
@@ -233,8 +245,8 @@
         <div class="container">
           <h2 class="sections-title collection-title">Our collection</h2>
           <ul class="collection-list">
-            <li class="collection-item">
-              <a class="collection-link" href="">
+            <li class="collection-item" data-aos="zoom-in">
+              <a class="collection-link" href="#">
                 <picture>
                   <source
                     srcset="
@@ -276,8 +288,8 @@
               </h3>
               <p class="collection-item-text">3300 UAH</p>
             </li>
-            <li class="collection-item">
-              <a class="collection-link" href="">
+            <li class="collection-item" data-aos="zoom-in">
+              <a class="collection-link" href="#">
                 <picture>
                   <source
                     srcset="
@@ -317,8 +329,8 @@
               <h3 class="collection-item-title">Women's blouse Gorgany</h3>
               <p class="collection-item-text">3350 UAH</p>
             </li>
-            <li class="collection-item">
-              <a class="collection-link" href="">
+            <li class="collection-item" data-aos="zoom-in">
+              <a class="collection-link" href="#">
                 <picture>
                   <source
                     srcset="
@@ -358,8 +370,8 @@
               <h3 class="collection-item-title">Women's blouse Crimea</h3>
               <p class="collection-item-text">4000 UAH</p>
             </li>
-            <li class="collection-item">
-              <a class="collection-link" href="">
+            <li class="collection-item" data-aos="zoom-in">
+              <a class="collection-link" href="#">
                 <picture>
                   <source
                     srcset="
@@ -399,8 +411,8 @@
               <h3 class="collection-item-title">Men's shirt Verkhovina</h3>
               <p class="collection-item-text">3100 UAH</p>
             </li>
-            <li class="collection-item">
-              <a class="collection-link" href="">
+            <li class="collection-item" data-aos="zoom-in">
+              <a class="collection-link" href="#">
                 <picture>
                   <source
                     srcset="
@@ -440,8 +452,8 @@
               <h3 class="collection-item-title">Mountain men's shirt</h3>
               <p class="collection-item-text">3300 UAH</p>
             </li>
-            <li class="collection-item">
-              <a class="collection-link" href="">
+            <li class="collection-item" data-aos="zoom-in">
+              <a class="collection-link" href="#">
                 <picture>
                   <source
                     srcset="
@@ -597,59 +609,61 @@
       <section class="sections-paddings" id="testimonials">
         <div class="container">
           <h2 class="sections-title testimonials-title">Testimonials</h2>
-          <ul class="testimonials-list">
-            <li class="testimonials-item">
-              <img
-                class="testimonials-img"
-                src="./images/testimonials-avatars/maria-tkachuk.png"
-                alt="maria tkachuk avatar"
-                width="64"
-                height="64"
-              />
-              <h3 class="testimonials-list-title">Maria Tkachuk</h3>
-              <p class="testimonials-list-text">
-                I was pleasantly surprised by the variety of embroidery offered
-                by Vyshyvanka Vibes. They have models for every taste - from
-                classic to modern. I bought an embroidered dress to celebrate a
-                special occasion and received impeccable service and refinement
-                in every detail.
-              </p>
-            </li>
-            <li class="testimonials-item second">
-              <img
-                class="testimonials-img"
-                src="./images/testimonials-avatars/sergey-rybachok.png"
-                alt="sergey rybachok avatar"
-                width="64"
-                height="64"
-              />
-              <h3 class="testimonials-list-title">Sergey Rybachok</h3>
-              <p class="testimonials-list-text">
-                Vyshyvanka Vibes exceeds all my expectations! Their vyshyvanka
-                are simply masterpieces! I fell in love with the quality of the
-                materials and the skill of the artisans behind each product.
-                This is my favorite embroidery shop where I always find
-                something special and unique.
-              </p>
-            </li>
-            <li class="testimonials-item third">
-              <img
-                class="testimonials-img"
-                src="./images/testimonials-avatars/natalia-chatuk.png"
-                alt="natalia chatuk avatar"
-                width="64"
-                height="64"
-              />
-              <h3 class="testimonials-list-title">Natalia Chatuk</h3>
-              <p class="testimonials-list-text">
-                Vyshyvanka Vibes is a real find for everyone who appreciates
-                Ukrainian culture. Their embroidery reflects the spirit and
-                traditions of our people. I not only buy embroidered shirts for
-                myself, but also give them to my friends abroad as a symbol of
-                our beauty and national pride.
-              </p>
-            </li>
-          </ul>
+          <div class="swiper">
+            <ul class="testimonials-list swiper-wrapper">
+              <li class="testimonials-item swiper-slide">
+                <img
+                  class="testimonials-img"
+                  src="./images/testimonials-avatars/maria-tkachuk.png"
+                  alt="maria tkachuk avatar"
+                  width="64"
+                  height="64"
+                />
+                <h3 class="testimonials-list-title">Maria Tkachuk</h3>
+                <p class="testimonials-list-text">
+                  I was pleasantly surprised by the variety of embroidery
+                  offered by Vyshyvanka Vibes. They have models for every taste
+                  - from classic to modern. I bought an embroidered dress to
+                  celebrate a special occasion and received impeccable service
+                  and refinement detail.
+                </p>
+              </li>
+              <li class="testimonials-item swiper-slide">
+                <img
+                  class="testimonials-img"
+                  src="./images/testimonials-avatars/sergey-rybachok.png"
+                  alt="sergey rybachok avatar"
+                  width="64"
+                  height="64"
+                />
+                <h3 class="testimonials-list-title">Sergey Rybachok</h3>
+                <p class="testimonials-list-text">
+                  Vyshyvanka Vibes exceeds all my expectations! Their vyshyvanka
+                  are simply masterpieces! I fell in love with the quality of
+                  the materials and the skill of the artisans behind each
+                  product. This is my favorite embroidery shop where I always
+                  find something special and unique.
+                </p>
+              </li>
+              <li class="testimonials-item swiper-slide">
+                <img
+                  class="testimonials-img"
+                  src="./images/testimonials-avatars/natalia-chatuk.png"
+                  alt="natalia chatuk avatar"
+                  width="64"
+                  height="64"
+                />
+                <h3 class="testimonials-list-title">Natalia Chatuk</h3>
+                <p class="testimonials-list-text">
+                  Vyshyvanka Vibes is a real find for everyone who appreciates
+                  Ukrainian culture. Their embroidery reflects the spirit and
+                  traditions of our people. I not only buy embroidered shirts
+                  for myself, but also give them to my friends abroad as a
+                  symbol of our beauty and pride.
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>
@@ -681,7 +695,7 @@
     </footer>
 
     <!-- MOBILE/TABLET MENU -->
-    <div class="mobile-backdrop" data-menu>
+    <div class="mobile-backdrop js-menu-container" id="mobile-menu">
       <div class="mobile">
         <div class="mobile-menu-header">
           <address class="mobile-menu-contact">
@@ -689,7 +703,7 @@
               +380 (68) 443-94-26
             </a>
           </address>
-          <button class="mobile-menu-close-btn" data-menu-close>
+          <button class="mobile-menu-close-btn js-close-menu">
             <svg class="mobile-menu-close-icon" width="36" height="36">
               <use href="./images/sprite.svg#icon-close"></use>
             </svg>
@@ -716,6 +730,22 @@
       </div>
     </div>
 
-    <script src="./js/menu.js" type="module"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/menu-nav-close.js" type="module"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- SLIDER SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/slider.js" type="module"></script>
   </body>
 </html>
