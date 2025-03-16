@@ -270,7 +270,9 @@ textarea {
   display: none;
 }
 
-.hero-btn {
+.hero-link {
+  cursor: pointer;
+  max-width: 168px;
   font-weight: 600;
   font-size: 14px;
   letter-spacing: -0.04em;
@@ -284,14 +286,20 @@ textarea {
   transition: border-color 250ms linear;
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
+.hero-link:hover,
+.hero-link:focus {
   border-color: #ecd979;
 }
 
-.hero-btn-icon {
+.hero-link-icon {
   transform: rotate(-30deg);
   margin-left: 10px;
+  transition: transform 250ms linear;
+}
+
+.hero-link:hover .hero-link-icon,
+.hero-link:focus .hero-link-icon {
+  transform: rotate(0);
 }
 /*==================== /MOBILE ====================*/
 
@@ -332,9 +340,9 @@ textarea {
     color: rgba(252, 249, 249, 0.4);
   }
 
-  .hero-btn {
+  .hero-link {
     font-size: 16px;
-    padding: 14px 39px;
+    padding: 14px 30px;
     margin: 0 0 46px 141px;
   }
 }
@@ -670,6 +678,12 @@ textarea {
 .order-form-submit-icon {
   margin-left: 10px;
   transform: rotate(-30deg);
+  transition: transform 250ms linear;
+}
+
+.order-form-submit-btn:hover .order-form-submit-icon,
+.order-form-submit-btn:focus .order-form-submit-icon {
+  transform: rotate(0);
 }
 
 .order-picture {
